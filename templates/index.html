@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body id="b m-3 me-3"> 
+    <h1 class="text-center">Image Classifier</h1>
+    <form method="post" action="/" enctype="multipart/form-data">
+        <input class="form-control h-100 w-50 m-3"  type="file" name="imagefile">
+        
+        <input class="btn btn-primary ml-4" type="submit" value="Predict image">
+    </form>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h5 class="card-title bg-primary text-white p-2 rounded text-center">Input image</h5>
+            <a href="{{output}}" download>
+                <img src="{{output}}" class="img-fluid w-100 rounded">
+              </a>
+          </div>
+          <div class="col-sm">
+            <h5 class="card-title bg-primary text-white p-2 rounded text-center">Canny image</h5>
+            <a href="{{output1}}" download>
+                <img src="{{output1}}" class="img-fluid w-100 rounded">
+              </a>
+          </div>
+          <div class="col-sm">
+            <h5 class="card-title bg-primary text-white p-2 rounded text-center">Hed image</h5>
+            <a href="{{output2}}" download>
+                <img src="{{output2}}" class="img-fluid w-100 rounded">
+              </a>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
